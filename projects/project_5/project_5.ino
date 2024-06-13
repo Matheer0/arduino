@@ -33,3 +33,13 @@ void loop() {
   delay(blink_delay);
 	
 }
+
+//Timing Problem:
+//  when blink_delay is very large (i.e. 4000ms), 
+//  delay(blink_delay) will pause the program very long causing
+//  blink_delay won't be updated until the end of delay.
+
+//  Thus, unable to read the data as soon as it arrives
+//  i.e. Arduino is single threading
+
+//  will solve this in next project
